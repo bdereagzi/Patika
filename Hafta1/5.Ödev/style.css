@@ -1,0 +1,39 @@
+#Logo{
+    text-align: center;
+}
+.Div{
+    background-color: #eeeeee;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.Div p{
+    text-align: center;
+}
+.Article{
+    text-align: center;
+}
+.Table{
+    width:90% ;
+    text-align: center; 
+    margin-left : 5%;
+}
+#Td-1{
+    width:37%;
+    background-color: #7ee5da;
+}
+#Td-2{
+    width:37% ;
+    background-color: #70ccc2;
+}
+#Td-3{
+    width:37% ;
+    background-color: #62b3aa;
+}
+p {
+    text-align: 15%;
+}
+img{
+    width:351; 
+    height:113;
+}
