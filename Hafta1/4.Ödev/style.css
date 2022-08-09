@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+  }
+  #title {
+    color: #A66CFF;
+  }
+  /* Navbar */
+  .ul-1 li {
+    display: inline-flex;
+    padding-right: 1rem;
+  }
+  /* Article */
+  .ul-2 li {
+    list-style-position: inside;
+  }
+
+  h2 {
+    color: #9C9EFE;
+  }
+  h3 {
+    color: #B1E1FF;
+  }
+  img {
+    width: 400px;
+  }
+  .About {
+    text-align: left;
+  }
+  .Product li {
+    list-style-position: inside;
+  }
