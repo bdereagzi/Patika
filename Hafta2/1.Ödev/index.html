@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Instagram</title>
+    <style>
+      
+
+    </style>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav
+      class="navbar navbar-expand-sm navbar-light border fixed-top bg-white" style="height: 54px;"
+    >
+      <div class="logo" style="margin-left: 192px;" >
+            <a class="navbar-brand" href="#"
+              ><img
+                src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon mr-5"></span>
+            </button>
+          </div>
+          
+      <div class="collapse navbar-collapse d-flex justify-content-center ml-5 ">
+        <form class="form-inline my-2 my-lg-0 ml-5 d-none d-sm-block ">
+          <input
+            class="form-control mr-sm-2 empty "
+            type="search"
+            placeholder="Ara"
+            style="font-family: Arial, FontAwesome; height: 28px; width: 216px"
+            aria-label="Search"
+          />
+        </form>
+      </div>
+      <div
+        class="collapse navbar-collapse ml-5 mt-2 .d-sm-none .d-md-block"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-home fa-lg mr-2 d-none d-sm-block mt-1"></i>
+              <span class="sr-only"></span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i
+                class="fab fa-facebook-messenger fa-lg mr-2 mt-1"
+                style="color: black"
+              ></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="far fa-compass fa-lg mr-2 mt-1" style="color: black"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="far fa-heart fa-lg mr-2 mt-1" style="color: black"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/bernadereagzi/" target="_blank"
+              ><img
+                src="img/1643629167987.jpg"
+                class="mb-2"
+                style="width: 23px; height: 23px; border-radius: 50%;"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Story Start-->
+    <div class="container middlearea offset-2 mt-5">
+      <div class="row">
+  
+        <div class=" mt-3 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+  
+          <div class="card">
+            <div class="card-body d-flex text-center">
+  
+                <a href="https://www.instagram.com/nike/" style="text-decoration: none;" target="_blank">
+                    <img
+                    src="http://1.bp.blogspot.com/-wVAYsGycF4I/TgoSaAFQTrI/AAAAAAAAAoo/HPoV-r5-gGA/s1600/8GNTV3G_Nike-Logo.jpg"
+                    class="storyphoto img-fluid" style="
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    border: 2px solid rgb(238, 39, 82);
+                    margin-left: -15px;
+                  "/>
+                    <span class="storytext">Nike</span>
+                </a>
+                
+                <a href="https://www.instagram.com/adidas.turkiye/" style="text-decoration: none;" target="_blank">
+                    <img
+                    src="data:image/png;base64,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"
+                    class="storyphoto img-fluid"
+                    style="
+                      width: 60px;
+                      height: 60px;
+                      border-radius: 50%;
+                      border: 2px solid rgb(238, 39, 82);
+                      margin-left: -15px;
+                    " />
+                    <span class="storytext">Adidas</span>
+                </a>
+                <a href="https://www.instagram.com/kodluyoruz" style="text-decoration: none;" target="_blank">
+                  <img
+                    src="data:image/jpeg;base64,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"
+                    class="storyphoto img-fluid mr-3"
+                    style="
+                      width: 60px;
+                      height: 60px;
+                      border-radius: 50%;
+                      border: 2px solid rgb(238, 39, 82);
+                      margin-left: -15px;
+                    " />
+                  <span class="storytext">Kodluyoruz</span>
+                </a>
+    
+  
+              <a href="https://www.instagram.com/patika.dev/" style="text-decoration: none;" target="_blank">
+                <img
+                  src="https://global-uploads.webflow.com/6097e0eca1e87557da031fef/609859a191abe5d64b17fed3_Patika%20logo.png"
+                  style="
+                      width: 60px;
+                      height: 60px;
+                      border-radius: 50%;
+                      border: 2px solid rgb(238, 39, 82);
+                      margin-left: -15px;
+                    "
+                  class="storyphoto img-fluid" />
+                <span class="storytext">Patika</span>
+              </a>
+  
+              <a href="https://www.instagram.com/microsoft/" style="text-decoration: none;" target="_blank">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlGIofreHHMq_imb6acvjfmwk9nHTETHXcA&usqp=CAU"
+                  class="storyphoto img-fluid"
+                  style="
+                      width: 60px;
+                      height: 60px;
+                      border-radius: 50%;
+                      border: 2px solid rgb(238, 39, 82);
+                      margin-left: -15px;
+                    " />
+                <span class="storytext mr-2">Microsoft</span>
+              </a>
+  
+              <a href="https://www.instagram.com/riotgames/" style="text-decoration: none;" target="_blank">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAkFBMVEXRNjnn5uLo7urRMzbo7+vRMTTn6eXPJCjQKi7k19TUUlTVYmLSSUvQLTHQKCzo8Ozcm5rTTk/PHyTm4d3PHCHjzcrajYzeravVZmbdqKbSQkTgurfixsPZhIPXdHTk0s/UWFnfs7HWbW7XenrROz7blJPdoqDYfn7Wa2zhwL3ZiYjq+fTSREbPEBjOAAzOAAA8a+7dAAAKAklEQVR4nO2b25qjrBKGDQjEJEqipmP2+3RnN3P/d7eAAjTGdB+sf8w889R7FBFt+SiKoqCDAEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEGQfxIm0iSm7/6KdxLnu/F6ujrk4pUOjDbi7z9ev6z7w1veR5zv14RzTkg02c8adThseo24+/Th+jBqYkYDOmp6yejtInTzZUR4xwA6fD7pEC+vpInrF4MKKQ/VZShn+rF431RbnpJALGTDjUy8odklNBEfGelUUTrIaLu85ZUv6w55pwly7EIFYa9voAFpqMunSoN503uy+C1tB6hgw07T93aUDtmkFCGZNGvAzylUcBoMjAbLRg22IhDbpvfw2dsGAxWHKW9UAL5snPqq4tysQceZcQL3QzO040ujBnOlQaOWZMPeowBLBxP+omX+mx3p+kVNYv2Z1UCa1nQ/GjVYpEEybXpPuHuLBizdzMl3CsD4dYhMTRvOb4Ingyuyh7HchVaHoMGRVGvaqtquklNYKelwILy8wSHEaf/8gwLqA52/U9Dx4jyfZKZ4vlrtiv4IRocTKg5Bkn5FA77efS4vH8chDAC+VmPrMOht+kWxgD8+nWzn58V4XflLrSmwG/+ogGrPZ6V3RCrEHTQYpkyRglU7p0FBA1loDZKhvXeP47jbFSMwi0hXpVQ/DK6RxEKRpqJtM+gKHRD9qICy66I+SsE8hqbT/JiH8C8ADWBkJ6cHfdgGqmbex9ppRvbeMh90RRkQ/YCshW90BC0Dw3UxAFg/PUjQYKW71Ho+Y/xBRQPvX2wF+fUGX5gkx+w7BR7cOal9IOub2+TDWK5rGPnQktAZaAAuMnEOIA+qVTv+hdZQyLJ1X5h0XwREjqx4uJ0+Ph6vQANw4jSwvn+rZ1B6sxoYH2KjAB492gE/OMNyg2XYti9MhuRbBVS/3asVovzx+Rg8AHQey3t2xouMBiOrgblpo0GvQd9qcHMa2NCbT5KgXZrj1KoGi1+VGtUw0eAMWHV1nBYL6erpQJf2rAYX3bNuVVDTgHgX6CbPeduLpeYovlLG57+z6lXtA62GZCXEaiy9Wlc9FbCN1cA4TBdZ1zXwIbGdVJ5k/uPQUdggwS4qWz35HZWGUA0TDQICG1Lso9BXI5nxAGwD74ZJw9Z0k6HXwE+2bkERtb5oTpvMIChXs/z0a1zRoB68CbtmqMwsvHNMYJbogx3woRbulQZ+WeBNsm1/EKQL7r/dEc7KzAA/3ivLw4cwUZNUBop9YNy1jWCFtYOT0WDcrMHevdEFF2HQdpBknZpe9fvmhIMy30GWecVt1sNEGjSYEbNtYDurwfQ7DXw4EK9saN16Fs19aEeWAyAcjUoNVump1EAOamHioDqt2FXjhx0vbEWqGriVttWgII+1/ZeE7QeK1M5ncuMX+GFP+KbJvjhWNKgNBdeb8Ngammw9vzdubnJPImrUoAyJWFENJ1olj1yH99wUITd3PxfIXlJNAD2FiX5aUZPBb+hqYjvSa2CixsT+HQ5u32twci6Q9avTSKu42IUs7763N3k5LmY2HDa8CBN14uMoYhcK2nxi/GmbOf9OA5+gdOHE0/z753HNUBOAmyKU/fuJgfsprvM6TFQtiZNydoMkqr8EDbrW5XKbXymqRqKh1g7bDxRL+U/50GuQlH0fs1GpwYswsUNSGlTWQWDfLujh5wcN7iLpxozuSO2VLlxrP1D0mU8+SQs3RfTjgRvnUeLSAE1m6qILDkM4sfVgb8Bb2EI3M3YviaLMbNvYVy5ci+nNFtUHXAukMHGrDknsR8iCpS5qWIsg8TbxMky0g9xJAqGUz6IaDVinkbLX6cz9nfZ3mFyCZyFyG8aoGTp3jVPfn/sPfgoTnYHb+cK7B9Ow7tFdmUa92JBZew0OrgvaT6bZKUx9t0v0hzvmBroey7kPIGX/VZhoZwLnRsxq0O3FaVtSLXyxSI+8Bk6l9gNFn+6JhJvtwxXzfajcdu73Up7DRNvmDIawN2fj7WsavMjVlHur1P2VN2QUBfRzltDARmorVo31y2XVczZRwoaI1UCZjN0h4apbkxOB33o1TGeSN9Lxw4vZ7ZWw/UDRZTc4C1IID9VazuVDtRes7AvXvBXbZZHBOTaxhesoU+3oDu3FONEmY6s+Ub5tbUs+2tfA2j05UJcVUutZm1fQyVK/v+xXAuVnC6BMkNsCoS0mrt6l4gXl21zJGzbZ1GJFm6ByRfESfqlOTM0hFC6VHMkpBCMl4/eei/ijnIaK04DSGfxS7j/+HJqfPRqwL1OqeMNAbY2uQaeC4ZcxZF8YsK7lH5agARYzxn4+HMZKaL3MXdPHe2Vp7clKyX/Xjv8DVuy/+r3B7MC6ehNYuTW1zomfvo32S9w+waGA68LVGRX9ng2xu6r4AKW9+pN04AuKtx9J07DVNQxDwjtZFq3H5/l2Ojxe9qtZrRrloUOewV/GyysUXFcwcpKJDOWXmRrSqQyvkJEUc2mfk1fYWEqm0r3qevgrRCjjY3cuRB+6qx0RojM1aZKQqBnELpAhJfOwZ2aiC7JRgqTH0C85TKk+xJJlGWTTzIPEFHXes/1eJ2k6d0dq/cN01qPY9Ea3mRrNUKbEI586deCCCYgy+YAJk1KxS08Vl/GJeoTGsfW06ZqT4+w2OygX/FdIEFSSBhXqGdUvpYF2aofbaAM2wnqyQwZMZ1NCOFynT25FhGdUrad45vIrWoPtYDQY3Jyuqbq3uBSHNBd/iQaq+57XOPVdMJ0sy1ggzDErWPvomDP7lef3zOWHE/XroqKsSFl6oVsu4PUcTmfJrY0x6ZWYAZctJpd3HcurwfrnTD4e03vOJg6VBl2dHeHuQIluW6ZPVJVZMr2H8Oso1ejv/1IaQMJVJ270SV5O3FY73Syni0xKpYRsP6PYDBPp6EPpUNlIPNc+TS0keJTH8T2/u4GiE3PcHbTTi0l643rRkV5kp9dNlQaQM1EjhM/venXhDV9Nw3nO+pcFL/Nr74fGaT76mGchaT4doRec0X6/X3311W09sNlODfrtaTqdKi8vewzyrHpUiP0oNr4f9tpExPl40zf+FCIGFmiv0v/aTbWwrbf1O5wO2mzrp2TMFqI+mR5Ke6BEZ6JIoCIqffTOTAHab5r5UJ95N/OfMSa968RV4KAxKzETRkgZgt5/jx04aCzS3mXeqZ8cTbLqYXs9qaeRcmqmExM1IrT/UEtRIt3estiG5Pr0qNFAnMPKu/6SiaEGi0VyqJXRQRVTomc76u6ZvOBM/XAPUnUxen5UV6O3SsGopUb9Fzz/7035TzjVoocHnh998S4EQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAE+Wf4H7FWowl0oW57AAAAAElFTkSuQmCC"
+                  class="storyphoto img-fluid"
+                  style="
+                      width: 60px;
+                      height: 60px;
+                      border-radius: 50%;
+                      border: 2px solid rgb(238, 39, 82);
+                      margin-left: -15px;
+                    " />
+                <span class="storytext">RiotGames</span>
+              </a>
+  
+              <a href="https://www.instagram.com/peak/" style="text-decoration: none;" target="_blank">
+                <img
+                  src="https://im.haberturk.com/2022/03/22/ver1648025720/3383810_810x458.jpg"
+                  class="storyphoto img-fluid"
+                  style="
+                      width: 60px;
+                      height: 60px;
+                      border-radius: 50%;
+                      border: 2px solid rgb(238, 39, 82);
+                      margin-left: -15px;
+                    " />
+                <span class="storytext">Peak</span>
+              </a>
+  
+            </div>
+          </div>
+          <!-- Story End -->
+          <!-- Start Post -->
+          <div class="card mt-3 mb-3 ">
+            <div class="card-header ">
+              <img
+                src="https://im.haberturk.com/2022/03/22/ver1648025720/3383810_810x458.jpg"
+                class="mr-2"
+                style="width: 35px; height: 35px; border-radius: 50%"
+              />
+              <span class="postuserfont"><strong><a href="https://www.instagram.com/peak/" target="_blank" style="color: black;">Peak</a></strong></span>
+              <span class="mt-2"
+                ><strong><i class="fas fa-ellipsis-h"></i></strong
+              ></span>
+            </div>
+            <img
+              src="https://i01.sozcucdn.com/wp-content/uploads/2019/02/iecrop/peak-5_16_9_1550601211.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <ul
+              class="list-group list-group-horizontal mt-1 border-0"
+              style="list-style-type: none;"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i
+                    class="far fa-heart fa-lg"
+                    style="color: black; position: relative; font-size: 23px"
+                  ></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i
+                    class="far fa-comment fa-lg"
+                    style="
+                      color: black;
+                      position: relative;
+                      font-size: 23px;
+                      margin-left: -11px;
+                    "
+                  ></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i
+                    class="far fa-paper-plane fa-lg"
+                    style="
+                      color: black;
+                      position: relative;
+                      font-size: 23px;
+                      margin-left: -11px;
+                    "
+                  ></i
+                ></a>
+              </li>
+              <span class="offset-7">
+                <li class="nav-item ml-4">
+                  <a class="nav-link ml-2" href="#"
+                    ><i
+                      class="far fa-bookmark fa-lg"
+                      style="color: black; position: relative; font-size: 23px"
+                    ></i
+                  ></a>
+                </li>
+              </span>
+            </ul>
+            <span>
+              <img
+                src="https://s3-symbol-logo.tradingview.com/international-bus-mach--600.png"
+                class="mb-1 ml-3"
+                style="width: 23px; height: 23px; border-radius: 50%"
+              />
+              <span class="postuserfont"
+                ><strong>IBM</strong> ve
+                <strong>18.738 diğer kişi</strong> beğendi</span
+              >
+            </span>
+            <div class="card-body" style="margin-top: -15px">
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >IBM</strong
+                >Tüm Türkiyede Aynı Anda!
+              </p>
+              <a href="#" style="text-decoration: none"
+                ><p
+                  class="card-text postuserfont"
+                  style="
+                    margin-left: -4px;
+                    margin-top: -14px;
+                    color: rgb(139, 133, 133);
+                  "
+                >
+                  589 yorumun tümünü gör
+                </p></a
+              >
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >AnnaD</strong
+                >Congrats!
+              </p>
+              <p class="card-text postuserfont" style="margin-top: -15px">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >WilliamBruce</strong
+                >That's Amazing!!!
+              </p>
+              <p
+                class="card-text"
+                style="
+                  margin-top: -10px;
+                  margin-left: -4px;
+                  font-size: 12px;
+                  color: rgb(139, 133, 133);
+                "
+              >
+                7 SAAT ÖNCE
+              </p>
+            </div>
+            <div
+              class="card-footer border-0"
+              style="
+                color: rgb(139, 133, 133);
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                  'Helvetica Neue', sans-serif;
+                font-size: 14px;
+                
+              "
+            >
+              <span style="margin-left: -4px">Yorum Ekle...</span
+              ><span class="float-right" style="color: #0095f6; opacity: 50%; "
+                ><strong>Paylaş</strong></span
+              >
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <img
+                src="https://global-uploads.webflow.com/6097e0eca1e87557da031fef/609859a191abe5d64b17fed3_Patika%20logo.png"
+                class="mr-2"
+                style="width: 35px; height: 35px; border-radius: 50%"
+              />
+              <span class="postuserfont"><strong>Patika</strong></span>
+              <span class="mt-2"
+                ><strong><i class="fas fa-ellipsis-h"></i></strong
+              ></span>
+            </div>
+            <img
+              src="https://global-uploads.webflow.com/6097e0eca1e875de53031ff6/62f255469d2d50227f490f90_fimple%20react%20pc%20tw%20(1).png"
+              class="card-img-top"
+              alt="..."
+            />
+            <ul
+              class="list-group list-group-horizontal mt-1 border-0"
+              style="list-style-type: none;"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i
+                    class="far fa-heart fa-lg"
+                    style="color: black; position: relative; font-size: 23px"
+                  ></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i
+                    class="far fa-comment fa-lg"
+                    style="
+                      color: black;
+                      position: relative;
+                      font-size: 23px;
+                      margin-left: -11px;
+                    "
+                  ></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i
+                    class="far fa-paper-plane fa-lg"
+                    style="
+                      color: black;
+                      position: relative;
+                      font-size: 23px;
+                      margin-left: -11px;
+                    "
+                  ></i
+                ></a>
+              </li>
+              <span class="offset-7">
+                <li class="nav-item ml-4">
+                  <a class="nav-link ml-2" href="#"
+                    ><i
+                      class="far fa-bookmark fa-lg"
+                      style="color: black; position: relative; font-size: 23px"
+                    ></i
+                  ></a>
+                </li>
+              </span>
+            </ul>
+            <span>
+              <img
+                src="https://icdn.ensonhaber.com/resimler/galeri/16_5877.jpg"
+                class="mb-1 ml-3"
+                style="width: 23px; height: 23px; border-radius: 50%"
+              />
+              <span class="postuserfont"
+                ><strong>emrecavak</strong> ve
+                <strong>670 diğer kişi</strong> beğendi</span
+              >
+            </span>
+            <div class="card-body" style="margin-top: -15px">
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >patika</strong
+                >Fimple React Pratium Başvurular Başladı Acele Et!
+              </p>
+              <a href="#" style="text-decoration: none"
+                ><p
+                  class="card-text postuserfont"
+                  style="
+                    margin-left: -4px;
+                    margin-top: -14px;
+                    color: rgb(139, 133, 133);
+                  "
+                >
+                  90 yorumun tümünü gör
+                </p></a
+              >
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >ermanucerr</strong
+                >Heyecan Verici :)
+              </p>
+              <p class="card-text postuserfont" style="margin-top: -15px">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >ylzakkayaa</strong
+                >Kesinlikle Katılacağım!
+              </p>
+              <p
+                class="card-text"
+                style="
+                  margin-top: -10px;
+                  margin-left: -4px;
+                  font-size: 12px;
+                  color: rgb(139, 133, 133);
+                "
+              >
+                4 SAAT ÖNCE
+              </p>
+            </div>
+            <div
+              class="card-footer border-0"
+              style="
+                color: rgb(139, 133, 133);
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                  'Helvetica Neue', sans-serif;
+                font-size: 14px;
+              "
+            >
+              <span style="margin-left: -4px">Yorum Ekle...</span
+              ><span class="float-right" style="color: #0095f6; opacity: 50%"
+                ><strong>Paylaş</strong></span
+              >
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlGIofreHHMq_imb6acvjfmwk9nHTETHXcA&usqp=CAU"
+                class="mr-2"
+                style="width: 35px; height: 35px; border-radius: 50%"
+              />
+              <span class="postuserfont"><strong>Microsoft</strong></span>
+              <span class="mt-2"
+                ><strong><i class="fas fa-ellipsis-h"></i></strong
+              ></span>
+            </div>
+            <img
+              src="data:image/jpeg;base64,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"
+              class="card-img-top"
+              alt="..."
+            />
+            <ul
+              class="list-group list-group-horizontal mt-1 border-0"
+              style="list-style-type: none; border: 0"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i
+                    class="far fa-heart fa-lg"
+                    style="color: black; position: relative; font-size: 23px"
+                  ></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i
+                    class="far fa-comment fa-lg"
+                    style="
+                      color: black;
+                      position: relative;
+                      font-size: 23px;
+                      margin-left: -11px;
+                    "
+                  ></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i
+                    class="far fa-paper-plane fa-lg"
+                    style="
+                      color: black;
+                      position: relative;
+                      font-size: 23px;
+                      margin-left: -11px;
+                    "
+                  ></i
+                ></a>
+              </li>
+              <span class="offset-7">
+                <li class="nav-item ml-4">
+                  <a class="nav-link ml-2" href="#"
+                    ><i
+                      class="far fa-bookmark fa-lg"
+                      style="color: black; position: relative; font-size: 23px"
+                    ></i
+                  ></a>
+                </li>
+              </span>
+            </ul>
+            <span>
+              <img
+                src="https://icdn.ensonhaber.com/resimler/galeri/16_5877.jpg"
+                class="mb-1 ml-3"
+                style="width: 23px; height: 23px; border-radius: 50%"
+              />
+              <span class="postuserfont"
+                ><strong>emrecavak</strong> ve
+                <strong>800.500 diğer kişi</strong> beğendi</span
+              >
+            </span>
+            <div class="card-body" style="margin-top: -15px">
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >ylzakkayaa</strong
+                >Bravo!!
+              </p>
+              <a href="#" style="text-decoration: none"
+                ><p
+                  class="card-text postuserfont"
+                  style="
+                    margin-left: -4px;
+                    margin-top: -14px;
+                    color: rgb(139, 133, 133);
+                  "
+                >
+                  2600 yorumun tümünü gör
+                </p></a
+              >
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >ermanucerr</strong
+                >Wow!
+              </p>
+              <p class="card-text postuserfont" style="margin-top: -15px">
+                <strong style="margin-left: -4px; margin-right: 5px"
+                  >emrecavak</strong
+                >LMAO!
+              </p>
+              <p
+                class="card-text"
+                style="
+                  margin-top: -10px;
+                  margin-left: -4px;
+                  font-size: 12px;
+                  color: rgb(139, 133, 133);
+                "
+              >
+                2 SAAT ÖNCE
+              </p>
+            </div>
+            <div
+              class="card-footer border-0"
+              style="
+                color: rgb(139, 133, 133);
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                  'Helvetica Neue', sans-serif;
+                font-size: 14px;
+              "
+            >
+              <span style="margin-left: -4px">Yorum Ekle...</span
+              ><span class="float-right" style="color: #0095f6; opacity: 50%"
+                ><strong>Paylaş</strong></span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- End Post -->
+        <!-- Start Article -->
+        <div class="col-3 mt-3">
+          <div
+            class="card col-xs-12 rightpanel"
+            id="sticky-sidebar"
+            style="width: 18rem"
+          >
+            <div class="card-body d-flex" >
+              <div>
+                <a class="nav-link" href="#"
+                  >
+                  <span>
+                  <img
+                    src="img/1643629167987.jpg"
+                    class=""
+                    style="
+                      width: 60px;
+                      height: 60px;
+                      border-radius: 50%;
+                      border: 2px solid rgb(238, 39, 82);
+                      margin-left: -15px;
+                    "
+                  /><span
+                    class=""
+                    style="
+                      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                        'Helvetica Neue', sans-serif;
+                      font-size: 15px;
+                      color: black;
+                      margin-left: 20px;
+                    "
+                    ><strong>bdereagzi</strong>
+                    </span>
+                  </span>
+                </a>
+                <div class="mt-2">
+                  <span
+                    class="mt-5"
+                    style="
+                      font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+                        sans-serif;
+                      font-size: 15px;
+                      color: gray;
+                    "
+                    >Senin İçin Öneriler</span
+                  >
+                  <span
+                    class="postuserfont mt-1 float-right"
+                    style="font-size: 12px"
+                    ><strong>Tümünü Gör</strong></span
+                  >
+                </div>
+                <div class="mt-2 ml-2">
+                  <div>
+                    <span
+                      ><img
+                        src="data:image/jpeg;base64,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"
+                        style="width: 30px; height: 30px; border-radius: 50%"
+                      />
+                    </span>
+                    <a href="https://www.instagram.com/taklacii" target="_blank">
+                    <span class="postuserfont ml-2 mt-1"
+                      ><strong>Taklaciguvercin</strong></span
+                    >
+                    <span
+                      class="postuserfont float-right"
+                      style="font-size: 13px; color: #0095f6; margin-top: 5px"
+                      ><strong>Takip Et</strong></span
+                    >
+                    </a>
+                  </div>
+                  <div class="mt-3">
+                    <span
+                      ><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZiBqP9bX9LW3-gWNo0CzMmWM-fEsP8cdgeg&usqp=CAU"
+                        style="width: 30px; height: 30px; border-radius: 50%"
+                      />
+                    </span>
+                    <a href="https://www.instagram.com/craftdıy" target="_blank">
+                    <span class="postuserfont ml-2 mt-1"
+                      ><strong>CRAFT&DIY </strong></span
+                    >
+                    <span
+                      class="postuserfont float-right"
+                      style="font-size: 13px; color: #0095f6; margin-top: 5px"
+                      ><strong>Takip Et</strong></span
+                    >
+                    </a>
+                  </div>
+                  <div class="mt-3">
+                    <span
+                      ><img
+                        src="https://www.espark.com.tr/fileadmin/user_upload/GLOBAL/brand_stores/logos/thenorthface.png"
+                        style="width: 30px; height: 30px; border-radius: 50%"
+                      />
+                    </span>
+                    <a href="https://www.instagram.com/northface" target="_blank">
+                    <span class="postuserfont ml-2 mt-1"
+                      ><strong>Northface</strong></span
+                    >
+                    <span
+                      class="postuserfont float-right"
+                      style="font-size: 13px; color: #0095f6; margin-top: 5px"
+                      ><strong>Takip Et</strong></span
+                    >
+                    </a>
+                  </div>
+                  <div class="mt-3">
+                    <span
+                      ><img
+                        src="data:image/png;base64,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"
+                        style="width: 30px; height: 30px; border-radius: 50%"
+                      />
+                    </span>
+                    <a href="https://www.instagram.com/ıkea/" target="_blank">
+                    <span class="postuserfont ml-2 mt-1"
+                      ><strong>IKEA</strong></span
+                    >
+                    <span
+                      class="postuserfont float-right"
+                      style="font-size: 13px; color: #0095f6; margin-top: 5px"
+                      ><strong>Takip Et</strong></span
+                    >
+                  </div>
+                  <div class="mt-3">
+                    <span
+                      ><img
+                        src="data:image/png;base64,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"
+                        style="width: 30px; height: 30px; border-radius: 50%"
+                      />
+                    </span>
+                    <a href="https://www.instagram.com/patika target="_blank">
+                    <span class="postuserfont ml-2 mt-1"
+                      ><strong>Patika</strong></span
+                    >
+                    <span
+                      class="postuserfont float-right"
+                      style="font-size: 13px; color: #0095f6; margin-top: 5px"
+                      ><strong>Takip Et</strong></span
+                    >
+                    </a>
+                  </div>
+                </div>
+                <div class="ml-2 mt-2" style="color: lightgray; font-size: 11px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                  <span><a href="https://about.instagram.com/" target="_blank" class="rightpanellinks">Hakkında</a> <a href="https://help.instagram.com/" target="_blank" class="rightpanellinks">Yardım</a> <a href="https://about.instagram.com/blog/" class="rightpanellinks">Basın</a> <a href="https://www.instagram.com/developer/" class="rightpanellinks">API</a> <a href="https://www.instagram.com/about/jobs/" class="rightpanellinks">İş Fırsatları</a> <a href="https://www.instagram.com/legal/privacy/" class="rightpanellinks">Gizlilik</a></span>
+                    <span><a href="https://www.instagram.com/legal/terms/" class="rightpanellinks">Koşullar</a> <a href="https://www.instagram.com/explore/locations/" class="rightpanellinks">Konumlar</a> <a href="https://www.instagram.com/directory/profiles/" class="rightpanellinks">Başlıca Hesaplar</a> <a href="https://www.instagram.com/directory/hashtags/" class="rightpanellinks">Konu Etiketleri</a> Dil</span>
+                    <p></p>
+                  <p style="font-size: 12px;">© 2021 INSTAGRAM & Patika Clone</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
